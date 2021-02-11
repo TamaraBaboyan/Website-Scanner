@@ -22,8 +22,7 @@ const requestData = (urls, base_url) => {
                 if (err.config && err.response && err.response.status)
                     console.log(err.config.url, err.response.status)
                 else {
-                    console.log(err.code)
-                    console.log(err.message)
+                    console.log(err.code, err.message)
                 }
 
             })
