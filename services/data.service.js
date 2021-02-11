@@ -36,6 +36,8 @@ const processUrl = async (url) => {
     let Total = 0
 
     try {
+        url = normalizeUrl(url)
+       
         let html_responses = await requestData([url], url)
 
         const visited_urls = new Set()
